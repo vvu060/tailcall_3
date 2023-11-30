@@ -3,7 +3,7 @@ import Button from '../shared/Button';
 
 const Banner = () => {
   return (
-    <main className='font-space-grotesk'>
+    <main>
       <div className='flex flex-col items-center text-center w-full mt-20'>
         <h1 className='text-display-large max-w-5xl'>
           API platform engineered for{' '}
