@@ -45,7 +45,12 @@ const moreFeatures = [
 
 const FeatureBox = ({ feature }) => {
   return (
-    <div className='flex items-center space-x-4 text-title-medium text-tailCall-dark-500 h-32 w-full border border-tailCall-dark-300'>
+    <div
+      style={{
+        borderBottom: '1px solid #E4E4E4',
+      }}
+      className='flex items-center space-x-4 text-title-medium text-tailCall-dark-500 h-32 w-full border border-tailCall-dark-300'
+    >
       <feature.logo className='w-8 h-8' />
       <span>{feature.title}</span>
     </div>
@@ -59,7 +64,7 @@ const MoreFeatures = () => {
         <h5 className='text-display-small text-tailCall-dark-500'>
           There’s so much more.
         </h5>
-        <div className='grid grid-cols-2 my-16 gap-1'>
+        <div className='grid grid-cols-2 my-16 gap-x-10'>
           {moreFeatures.map((feature) => (
             <FeatureBox feature={feature} key={feature.id} />
           ))}
