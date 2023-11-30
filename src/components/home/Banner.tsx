@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../shared/Button';
 
 const Banner = () => {
   return (
@@ -14,9 +15,9 @@ const Banner = () => {
           <span className='text-title-medium'>middle,&nbsp;</span>and{' '}
           <span className='text-title-medium'>service</span> layers.
         </p>
-        <div className='mt-10'>
-          <button>Get Started</button>
-          <button>Learn More</button>
+        <div className='mt-10 space-x-6'>
+          <Button title='Get Started' onClick={() => {}} theme='dark' />
+          <Button title='Learn More' onClick={() => {}} theme='light' />
         </div>
       </div>
     </main>
