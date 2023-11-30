@@ -1,5 +1,5 @@
 import Marquee from 'react-fast-marquee';
-import gtU from '../../../static/icons/basic/gt-undescore-gray.svg';
+import GtU from '@site/static/icons/basic/gt-undescore-gray.svg';
 
 const partnerImages = [
   {
@@ -43,7 +43,7 @@ const Partners = () => {
   return (
     <section className='mt-8'>
       <div className='text-title-small text-tailCall-light-500 text-center'>
-        <img src={gtU} alt='gt icon' />
+        <img src={GtU} alt='gt icon' />
         Our Cloud Partners
       </div>
       <Marquee>
