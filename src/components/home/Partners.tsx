@@ -1,3 +1,5 @@
+import Marquee from 'react-fast-marquee';
+
 const partnerImages = [
   {
     id: 1,
@@ -38,13 +40,15 @@ const partnerImages = [
 
 const Partners = () => {
   return (
-    <div className='flex space-x-16 mt-10 overflow-hidden'>
-      {partnerImages.map((partner) => (
-        <div key={partner.id} className='h-20'>
-          <partner.Svg role='img' />
-        </div>
-      ))}
-    </div>
+    <Marquee>
+      <div className='flex space-x-16 mt-10 overflow-hidden'>
+        {partnerImages.map((partner) => (
+          <div key={partner.id} className='h-20'>
+            <partner.Svg role='img' />
+          </div>
+        ))}
+      </div>
+    </Marquee>
   );
 };
 
