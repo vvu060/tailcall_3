@@ -42,9 +42,9 @@ const partnerImages = [
 const Partners = () => {
   return (
     <section className='mt-8'>
-      <div className='text-title-small text-tailCall-light-500 text-center'>
-        <img src={GtU} alt='gt icon' />
-        Our Cloud Partners
+      <div className='text-title-small text-tailCall-light-500 text-center space-x-1'>
+        <GtU className='h-4 w-6' />
+        <span>Our Cloud Partners</span>
       </div>
       <Marquee>
         <div className='flex space-x-16 mt-10 overflow-hidden'>
