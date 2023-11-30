@@ -1,10 +1,14 @@
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 
-import Banner from '../components/home/Banner';
-
 import '../css/custom.css';
+
+import Banner from '../components/home/Banner';
 import Partners from '../components/home/Partners';
+import LegacyGateway from '../components/home/LegacyGateway';
+import Features from '../components/home/Features';
+import MoreFeatures from '../components/home/MoreFeatures';
+import Graph from '../components/home/Graph';
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
@@ -16,6 +20,10 @@ export default function Home(): JSX.Element {
       <div className='font-space-grotesk'>
         <Banner />
         <Partners />
+        <LegacyGateway />
+        <Features />
+        <MoreFeatures />
+        <Graph />
       </div>
     </Layout>
   );
