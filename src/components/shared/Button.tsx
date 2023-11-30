@@ -1,3 +1,5 @@
+import { ComponentType, SVGProps } from 'react';
+
 type ButtonProps = {
   title?: string;
   icon?: string;
@@ -9,9 +11,9 @@ const Button = ({ title, icon, theme, onClick }: ButtonProps) => {
   return (
     <button
       onClick={onClick}
-      className={`rounded-xl h-16 w-52 text-title-small cursor-pointer px-12 py-5 ${
+      className={`rounded-xl h-16 min-w-fit text-title-small cursor-pointer px-12 py-5 ${
         theme === 'dark'
-          ? 'text-tailCall-light-100 bg-tailCall-dark-600 border-none'
+          ? 'text-tailCall-light-100 bg-tailCall-dark-700 border-none'
           : 'text-tailCall-dark-500 bg-transparent border-2 border-tailCall-dark-500'
       }`}
     >
