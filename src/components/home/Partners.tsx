@@ -1,4 +1,5 @@
 import Marquee from 'react-fast-marquee';
+import gtU from '../../../static/icons/basic/gt-undescore-gray.svg';
 
 const partnerImages = [
   {
@@ -40,15 +41,21 @@ const partnerImages = [
 
 const Partners = () => {
   return (
-    <Marquee>
-      <div className='flex space-x-16 mt-10 overflow-hidden'>
-        {partnerImages.map((partner) => (
-          <div key={partner.id} className='h-20'>
-            <partner.Svg role='img' />
-          </div>
-        ))}
+    <section className='mt-8'>
+      <div className='text-title-small text-tailCall-light-500 text-center'>
+        <img src={gtU} alt='gt icon' />
+        Our Cloud Partners
       </div>
-    </Marquee>
+      <Marquee>
+        <div className='flex space-x-16 mt-10 overflow-hidden'>
+          {partnerImages.map((partner) => (
+            <div key={partner.id} className='h-20'>
+              <partner.Svg role='img' />
+            </div>
+          ))}
+        </div>
+      </Marquee>
+    </section>
   );
 };
 
