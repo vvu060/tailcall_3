@@ -10,6 +10,7 @@ import Features from '../components/home/Features';
 import MoreFeatures from '../components/home/MoreFeatures';
 import Graph from '../components/home/Graph';
 import Discover from '../components/shared/Discover';
+import Footer from '../components/shared/Footer';
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
@@ -26,6 +27,7 @@ export default function Home(): JSX.Element {
         <MoreFeatures />
         <Graph />
         <Discover />
+        <Footer />
       </div>
     </Layout>
   );
