@@ -1,8 +1,9 @@
 import GtU from '@site/static/icons/basic/gt-undescore-gray.svg';
+import ApiImage from '@site/static/images/home/work-with-api.jpg';
 
 const LegacyGateway = () => {
   return (
-    <section className='h-96 w-full my-12'>
+    <section className='w-full my-12'>
       <div className='max-w-7xl mx-auto my-20'>
         <div className='text-title-tiny text-tailCall-light-500 space-x-1'>
           <GtU className='h-4 w-6' />
@@ -27,6 +28,13 @@ const LegacyGateway = () => {
       </div>
 
       {/* TODO: image to be rendered here  */}
+      <div className='w-full flex items-center justify-center'>
+        <img
+          src={ApiImage}
+          alt='work with api'
+          className='object-contain rounded-[40px]'
+        />
+      </div>
     </section>
   );
 };
