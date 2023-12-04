@@ -9,6 +9,7 @@ import LegacyGateway from '../components/home/LegacyGateway';
 import Features from '../components/home/Features';
 import MoreFeatures from '../components/home/MoreFeatures';
 import Graph from '../components/home/Graph';
+import Discover from '../components/shared/Discover';
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
@@ -24,6 +25,7 @@ export default function Home(): JSX.Element {
         <Features />
         <MoreFeatures />
         <Graph />
+        <Discover />
       </div>
     </Layout>
   );

@@ -4,7 +4,7 @@ import ChooseTailcall from './ChooseTailcall';
 const Graph = () => {
   return (
     <section className='bg-tailCall-dark-700 h-full w-full text-tailCall-light-100'>
-      <div className='max-w-7xl mx-auto my-20 py-20'>
+      <div className='max-w-7xl mx-auto py-20'>
         <div className='flex items-center justify-between'>
           <h5 className='text-display-medium max-w-lg'>
             Platform made for performance.
