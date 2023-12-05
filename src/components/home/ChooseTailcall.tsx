@@ -4,7 +4,7 @@ const chooseTailcall = [
     title: 'Top developer experience',
     description:
       'Design your APIs, with syntax highlighting and lint checks within your favourite IDE.',
-    Image: require('@site/static/icons/basic/experience.svg').default,
+    Image: require('@site/static/icons/basic/rocket.svg').default,
   },
   {
     id: 2,
