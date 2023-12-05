@@ -1,47 +1,5 @@
+import { moreFeatures } from '@site/src/constants';
 import Button from '../shared/Button';
-
-const moreFeatures = [
-  {
-    id: 1,
-    title: 'Powerful Batching Primitive',
-    logo: require('@site/static/icons/basic/clock.svg').default,
-  },
-  {
-    id: 2,
-    title: 'Extensions with plugins and JS support',
-    logo: require('@site/static/icons/basic/clock.svg').default,
-  },
-  {
-    id: 3,
-    title: 'Field based Authentication & Authorisation',
-    logo: require('@site/static/icons/basic/clock.svg').default,
-  },
-  {
-    id: 4,
-    title: 'Protocol agnostic',
-    logo: require('@site/static/icons/basic/clock.svg').default,
-  },
-  {
-    id: 5,
-    title: 'Performance',
-    logo: require('@site/static/icons/basic/clock.svg').default,
-  },
-  {
-    id: 6,
-    title: 'Security',
-    logo: require('@site/static/icons/basic/lock.svg').default,
-  },
-  {
-    id: 7,
-    title: 'Edge Compatible',
-    logo: require('@site/static/icons/basic/puzzle.svg').default,
-  },
-  {
-    id: 8,
-    title: 'Compile time tracks',
-    logo: require('@site/static/icons/basic/clock.svg').default,
-  },
-];
 
 const FeatureBox = ({ feature }) => {
   return (

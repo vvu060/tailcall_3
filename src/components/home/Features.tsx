@@ -1,55 +1,5 @@
+import { features } from '@site/src/constants';
 import GtU from '@site/static/icons/basic/gt-underscore.svg';
-
-const features = [
-  {
-    id: 1,
-    Svg: require('@site/static/images/home/orchestration.jpg').default,
-    title: 'Orchestration',
-    description1:
-      "Harness the power of Tailcall's advanced orchestration primitives, designed for large-scale API management. Effortlessly interface with  ",
-    highlightedText: 'gRPC, REST, GraphQL,',
-    description2:
-      ' and more, ensuring seamless communication and complex data transformations for enterprise operations.',
-  },
-  {
-    id: 2,
-    Svg: require('@site/static/images/home/orchestration.jpg').default,
-    title: 'Governance',
-    description1:
-      'Implement robust governance and security across your API landscape using our ',
-    highlightedText: 'code-based governance',
-    description2:
-      ' and comprehensive security framework. Enjoy precise control mechanisms that ensure compliance, standardization, operational consistency, and safeguard against evolving digital threats.',
-  },
-  {
-    id: 3,
-    Svg: require('@site/static/images/home/efficiency.jpg').default,
-    title: 'Efficiency',
-    description1:
-      'Tailcall brings breakthrough performance optimizations, integrating ',
-    highlightedText: 'enterprise-specific tuning ',
-    description2:
-      ' for high-speed and low-latency. Expect unmatched response times, lower resource utilization, and adaptability to your unique operational needs and workload demands.',
-  },
-  {
-    id: 4,
-    Svg: require('@site/static/images/home/resiliency.jpg').default,
-    title: 'Resiliency',
-    description1:
-      'Engineered for enterprise resilience, Tailcall guarantees robust performance under any conditions. Our platform is designed for ',
-    highlightedText: 'high availability and fault tolerance,',
-    description2: ' ensuring uninterrupted service and reliability at scale.',
-  },
-  {
-    id: 5,
-    Svg: require('@site/static/images/home/extendability.jpg').default,
-    title: 'Extendability',
-    description1: "Tailcall's ",
-    highlightedText: 'plugin-centric',
-    description2:
-      " extendability empowers enterprises to craft custom solutions. Design and integrate bespoke plugins that precisely fit your unique requirements, enhancing the platform's functionality to align with your specific business objectives.",
-  },
-];
 
 const Feature = ({ feature }) => {
   return (

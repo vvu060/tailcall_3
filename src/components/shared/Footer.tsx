@@ -1,33 +1,6 @@
 import Link from '@docusaurus/Link';
+import { socials } from '@site/src/constants';
 import TailcallLogo from '@site/static/icons/companies/tailcall-white.svg';
-
-const socials = [
-  {
-    id: 1,
-    name: 'github',
-    image: require('@site/static/icons/companies/github-gray.svg').default,
-    href: '/',
-  },
-  {
-    id: 2,
-    name: 'discord',
-    image: require('@site/static/icons/companies/discord-gray.svg').default,
-    href: '/',
-  },
-  {
-    id: 3,
-    name: 'linkedin',
-    image: require('@site/static/icons/companies/linkedin-gray.svg').default,
-    href: '/',
-  },
-
-  {
-    id: 4,
-    name: 'twitter',
-    image: require('@site/static/icons/companies/twitter-gray.svg').default,
-    href: '/',
-  },
-];
 
 const Footer = () => {
   return (
