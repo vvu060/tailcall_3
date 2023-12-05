@@ -16,7 +16,7 @@ const GraphContainer = ({
       style={{
         border: '1px solid #2C2C2C',
       }}
-      className='border border-red-500 h-[400px] max-w-2xl rounded-[32px]'
+      className='border border-red-500 h-[400px] w-[680px] rounded-[32px]'
     >
       <div className='flex flex-col px-12 py-8'>
         <span className='text-content-medium text-tailCall-light-100'>
