@@ -1,8 +1,8 @@
-import { ComponentType, SVGProps } from 'react';
+import { SVGProps } from 'react';
 
 type ButtonProps = {
   title?: string;
-  icon?: string;
+  icon?: React.ComponentType<SVGProps<SVGSVGElement>>;
   theme: 'light' | 'dark' | 'gray';
   onClick: () => void;
 };
@@ -27,11 +27,11 @@ const Button = ({ title, icon, theme, onClick }: ButtonProps) => {
   return (
     <button
       onClick={onClick}
-      className={`rounded-xl h-16 min-w-fit text-title-small cursor-pointer px-12 py-5 ${
+      className={`rounded-lg sm:rounded-xl h-12 sm:h-16 w-40 sm:min-w-fit text-title-tiny sm:text-title-small cursor-pointer px-6 py-3 sm:px-12 sm:py-5 ${
         generateThemeClasses() ?? ''
       }`}
     >
-      {icon && <img src={icon} alt={title} />}
+      {icon && <icon />}
       {title && <span> {title}</span>}
     </button>
   );
