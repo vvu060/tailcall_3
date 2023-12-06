@@ -36,7 +36,7 @@ const LegacyGateway = () => {
         />
       </div>
 
-      <div className='w-full flex items-center justify-center'>
+      <div className='sm:hidden w-full flex items-center justify-center'>
         <img
           src={ApiImageMobile}
           alt='work with api'
