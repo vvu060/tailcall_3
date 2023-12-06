@@ -33,6 +33,14 @@ const Graph = () => {
             metricTitle='Latency (ms)'
             metricDesc='(Lower is better)'
           />
+          <div className='sm:hidden'>
+            <Button
+              title='View on Github'
+              onClick={() => {}}
+              theme='gray'
+              icon={github}
+            />
+          </div>
         </div>
 
         <ChooseTailcall />
