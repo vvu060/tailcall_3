@@ -20,7 +20,7 @@ const Banner = () => {
           </span>{' '}
           layers.
         </p>
-        <div className='flex mt-6 sm:mt-10 space-x-6'>
+        <div className='flex mt-6 sm:mt-10 space-x-4 sm:space-x-6'>
           <Button title='Get in touch' onClick={() => {}} theme='dark' />
           <Button title='Know More' onClick={() => {}} theme='light' />
         </div>

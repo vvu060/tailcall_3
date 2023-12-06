@@ -27,7 +27,7 @@ const Button = ({ title, icon, theme, onClick }: ButtonProps) => {
   return (
     <button
       onClick={onClick}
-      className={`rounded-lg sm:rounded-xl h-12 sm:h-16 w-40 sm:min-w-fit text-title-tiny sm:text-title-small cursor-pointer px-6 py-3 sm:px-12 sm:py-5 ${
+      className={`rounded-lg sm:rounded-xl h-12 sm:h-16 sm:min-w-fit text-title-tiny sm:text-title-small cursor-pointer px-6 py-3 sm:px-12 sm:py-5 ${
         generateThemeClasses() ?? ''
       }`}
     >

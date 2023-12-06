@@ -5,8 +5,8 @@ const Discover = () => {
   return (
     <section>
       <div className='bg-tailCall-yellow relative flex items-center justify-center h-[208px] sm:h-full'>
-        <div className='sm:h-full text-center mt-20 sm:mt-0'>
-          <BgTailcall className='w-[90%]' />
+        <div className='sm:h-full text-center mt-28 sm:mt-0'>
+          <BgTailcall className='sm:w-[90%] w-full' />
         </div>
 
         <div className='flex flex-col items-center absolute max-w-2xl space-y-4 sm:space-y-6'>
