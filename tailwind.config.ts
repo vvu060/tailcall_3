@@ -62,6 +62,14 @@ module.exports = {
           letterSpacing: '-4%',
         },
       ],
+      'title-semi-large': [
+        '28px',
+        {
+          lineHeight: '36.4px',
+          fontWeight: '700',
+          letterSpacing: '-4%',
+        },
+      ],
       'title-medium': [
         '24px',
         {
@@ -108,6 +116,14 @@ module.exports = {
           lineHeight: '24px',
           fontWeight: '400',
           letterSpacing: '-2%',
+        },
+      ],
+      'content-tiny': [
+        '14px',
+        {
+          lineHeight: '20.73px',
+          fontWeight: '400',
+          letterSpacing: '-4%',
         },
       ],
     },
