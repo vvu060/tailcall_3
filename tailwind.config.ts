@@ -19,7 +19,8 @@ module.exports = {
             300: '#232426',
             400: '#1C1D1F',
             500: '#121315',
-            600: '#000000',
+            600: '#121212',
+            700: '#000000',
           },
           yellow: '#FDEA2E',
         },
@@ -57,6 +58,14 @@ module.exports = {
         '32px',
         {
           lineHeight: '41.6px',
+          fontWeight: '700',
+          letterSpacing: '-4%',
+        },
+      ],
+      'title-semi-large': [
+        '28px',
+        {
+          lineHeight: '36.4px',
           fontWeight: '700',
           letterSpacing: '-4%',
         },
@@ -107,6 +116,14 @@ module.exports = {
           lineHeight: '24px',
           fontWeight: '400',
           letterSpacing: '-2%',
+        },
+      ],
+      'content-tiny': [
+        '14px',
+        {
+          lineHeight: '20.73px',
+          fontWeight: '400',
+          letterSpacing: '-4%',
         },
       ],
     },

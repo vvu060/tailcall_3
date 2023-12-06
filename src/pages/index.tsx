@@ -1,33 +1,16 @@
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
 
-import styles from './index.module.css';
+import '../css/custom.css';
 
-function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className='container'>
-        <Heading as='h1' className='text-display-large font-space-grotesk p-4'>
-          {siteConfig.title}
-        </Heading>
-        <p className='hero__subtitle '>{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className='button button--secondary button--lg'
-            to='/docs/intro'
-          >
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
+import Banner from '../components/home/Banner';
+import Partners from '../components/home/Partners';
+import LegacyGateway from '../components/home/LegacyGateway';
+import Features from '../components/home/Features';
+import MoreFeatures from '../components/home/MoreFeatures';
+import Graph from '../components/home/Graph';
+import Discover from '../components/shared/Discover';
+import Footer from '../components/shared/Footer';
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
@@ -36,10 +19,16 @@ export default function Home(): JSX.Element {
       title='Tailcall'
       description='A cloud native solution to streamline API management across edge, middle, and service layers.'
     >
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
+      <div className='font-space-grotesk'>
+        <Banner />
+        <Partners />
+        <LegacyGateway />
+        <Features />
+        <MoreFeatures />
+        <Graph />
+        <Discover />
+        <Footer />
+      </div>
     </Layout>
   );
 }
