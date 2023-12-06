@@ -1,20 +1,28 @@
 import Button from '../shared/Button';
 import ChooseTailcall from './ChooseTailcall';
 import GraphContainer from './GraphContainer';
+import github from '@site/static/icons/companies/github-gray.svg';
 
 const Graph = () => {
   return (
     <section className='bg-tailCall-dark-700 h-full w-full text-tailCall-light-100'>
-      <div className='max-w-7xl mx-auto py-20'>
+      <div className='sm:max-w-7xl mx-4 sm:mx-auto py-8 sm:py-20'>
         <div className='flex items-center justify-between'>
-          <h5 className='text-display-medium max-w-lg'>
+          <h5 className='text-title-large sm:text-display-medium max-w-lg'>
             Platform made for performance.
           </h5>
-          <Button title='View on Github' onClick={() => {}} theme='gray' />
+          <div className='hidden sm:block'>
+            <Button
+              title='View on Github'
+              onClick={() => {}}
+              theme='gray'
+              icon={github}
+            />
+          </div>
         </div>
 
         {/* Graphs */}
-        <div className='flex gap-10 items-center w-full'>
+        <div className='flex flex-col sm:flex-row gap-10 items-center w-full'>
           <GraphContainer
             metricData={2890.68}
             metricTitle='Requests/sec'

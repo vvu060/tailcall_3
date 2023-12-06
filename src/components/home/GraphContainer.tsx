@@ -16,13 +16,13 @@ const GraphContainer = ({
       style={{
         border: '1px solid #2C2C2C',
       }}
-      className='border border-red-500 h-[400px] w-[680px] rounded-[32px]'
+      className='border border-red-500 h-[400px] w-[95%] sm:w-[680px] rounded-3xl sm:rounded-[32px]'
     >
       <div className='flex flex-col px-12 py-8'>
-        <span className='text-content-medium text-tailCall-light-100'>
+        <span className='text-content-small sm:text-content-medium text-tailCall-light-100'>
           {metricTitle}
         </span>
-        <span className='text-title-large text-tailCall-light-100'>
+        <span className='text-title-medium sm:text-title-large text-tailCall-light-100'>
           <CountUp
             start={2000}
             end={+metricData}
@@ -30,7 +30,7 @@ const GraphContainer = ({
             duration={0.75}
           />
         </span>
-        <span className='text-content-small text-tailCall-light-400'>
+        <span className='text-content-tiny sm:text-content-small text-tailCall-light-400'>
           {metricDesc}
         </span>
       </div>

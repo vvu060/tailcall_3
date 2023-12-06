@@ -17,7 +17,7 @@ const FeatureBox = ({ feature }) => {
 
 const MoreFeatures = () => {
   return (
-    <section className='w-full mb-20'>
+    <section className='w-full mb-8 sm:mb-20'>
       <div className='max-w-7xl mx-4 sm:mx-auto text-center'>
         <h5 className='text-title-semi-large sm:text-display-small text-tailCall-dark-500'>
           There’s so much more.
